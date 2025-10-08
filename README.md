@@ -17,5 +17,5 @@ Direct raw links to .sql files (click to open code in browser, copy-paste to sql
 ## Usage in sqliteonline.com
 1. Click a raw link above > Code opens (view raw).
 2. Select all > Copy (Ctrl+A > Ctrl+C).
-3. Go to [sqliteonline.com](javascript:(function(){var w=window.open('https://sqliteonline.com/','_blank','width=800,height=600');})();) > Click "Import" or paste in editor.
+3. Go to [sqliteonline.com](https://sqliteonline.com/) > Click "Import" or paste in editor.
 4. Click "Run" (or Shift+Enter) to execute—view results in table below.
