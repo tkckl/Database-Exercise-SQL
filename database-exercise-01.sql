@@ -3,8 +3,8 @@
 -- ************************************************************
 
 -- Drop existing tables if they exist
-DROP TABLE IF EXISTS stud;
-DROP TABLE IF EXISTS info;
+DROP TABLE IF EXISTS STUD;
+DROP TABLE IF EXISTS INFO;
 
 -- ************************************************************
 -- Table 1: STUD (學生考試分數資料)
