@@ -5,15 +5,15 @@
 
 DROP TABLE IF EXISTS TRANS;
 DROP TABLE IF EXISTS PRODUCT;
-DROP TABLE IF EXISTS USER;
+DROP TABLE IF EXISTS MEM;
 
 -- ************************************************************
 -- 建立表格
 -- ************************************************************
 
-CREATE TABLE USER (
-   uid    INT PRIMARY KEY,       -- 用戶編號
-   uname  CHAR(50),              -- 用戶姓名
+CREATE TABLE MEM (
+   mid    INT PRIMARY KEY,       -- 用戶編號
+   mname  CHAR(50),              -- 用戶姓名
    rdate  DATE,                  -- 註冊日期
    area   CHAR(30)               -- 地區
 );
@@ -27,11 +27,11 @@ CREATE TABLE PRODUCT (
 
 CREATE TABLE TRANS (
    tid    INT PRIMARY KEY,       -- 訂單編號
-   uid    INT,                   -- 用戶編號
+   mid    INT,                   -- 用戶編號
    pid    INT,                   -- 產品編號
    odate  DATE,                  -- 訂單日期
    qty    INT,                   -- 數量
-   FOREIGN KEY (uid) REFERENCES USER(uid),
+   FOREIGN KEY (mid) REFERENCES MEM(mid),
    FOREIGN KEY (pid) REFERENCES PRODUCT(pid)
 );
 
@@ -39,13 +39,13 @@ CREATE TABLE TRANS (
 -- 插入 USER 資料
 -- ************************************************************
 
-INSERT INTO USER VALUES (1001, 'John Chan',   '2023-09-15', '屯門');
-INSERT INTO USER VALUES (1002, 'Mary Wong',   '2022-03-12', '沙田');
-INSERT INTO USER VALUES (1003, 'Peter Lee',   '2021-11-08', '荃灣');
-INSERT INTO USER VALUES (1004, 'Alice Ho',    '2023-02-20', '觀塘');
-INSERT INTO USER VALUES (1005, 'David Lam',   '2020-07-05', '沙田');
-INSERT INTO USER VALUES (1006, 'Ivy Chu',     '2022-12-25', '屯門');
-INSERT INTO USER VALUES (1007, 'Samuel Yip',  '2021-01-18', '荃灣');
+INSERT INTO MEM VALUES (1001, 'John Chan',   '2023-09-15', 'Tuen Mun');
+INSERT INTO MEM VALUES (1002, 'Mary Wong',   '2022-03-12', 'Sha Tin');
+INSERT INTO MEM VALUES (1003, 'Peter Lee',   '2021-11-08', 'Tsuen Wan');
+INSERT INTO MEM VALUES (1004, 'Alice Ho',    '2023-02-20', 'Kwun Tong');
+INSERT INTO MEM VALUES (1005, 'David Lam',   '2020-07-05', 'Sha Tin');
+INSERT INTO MEM VALUES (1006, 'Ivy Chu',     '2022-12-25', 'Tuen Mun');
+INSERT INTO MEM VALUES (1007, 'Samuel Yip',  '2021-01-18', 'Tsuen Wan');
 
 -- ************************************************************
 -- 插入 PRODUCT 資料
