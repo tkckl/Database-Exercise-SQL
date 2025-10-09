@@ -7,12 +7,12 @@
 -- ************************************************************
 
 -- 刪除舊表（如存在）
-DROP TABLE IF EXISTS bookstore;
+DROP TABLE IF EXISTS BOOKSTORE;
 
 -- ************************************************************
 -- 建立 BOOKSTORE 資料表
 -- ************************************************************
-CREATE TABLE bookstore (
+CREATE TABLE BOOKSTORE (
    title      CHAR(100) PRIMARY KEY,
    author     CHAR(50),
    genre      CHAR(30),
@@ -26,28 +26,28 @@ CREATE TABLE bookstore (
 -- ************************************************************
 -- 插入示例數據
 -- ************************************************************
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Matilda', 'Roald Dahl', 'Fiction', '1988-10-01', 'Penguin Young Readers Group', 78, 4.8, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Database Systems', 'C. J. Date', 'Education', '2003-05-15', 'Tech Publishing', 580, 4.5, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Dummy Guide to SQL', 'Tom Smith', 'Education', '2015-09-20', 'Dummy Press', 220, 3.2, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Harry Potter and the Philosopher''s Stone', 'J. K. Rowling', 'Fiction', '1997-06-26', 'Bloomsbury', 120, 4.9, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Cooking 101', 'Mary Chan', 'Cooking', '1985-03-10', 'HK Publishing', 90, 3.0, FALSE);
 
-INSERT INTO bookstore VALUES 
-('Modern Science', 'Albert Wong', 'Science', '1989-07-21', 'Academic Press', 340, 4.0, TRUE);
+INSERT INTO BOOKSTORE VALUES 
+('Modern Science', 'Albert Wong', 'Science', '1989-07-21', 'Academic Press', 540, 4.0, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Big Data Explained', 'Susan Lee', 'Education', '2018-11-11', 'Tech Publishing', 480, 4.1, TRUE);
 
-INSERT INTO bookstore VALUES 
+INSERT INTO BOOKSTORE VALUES 
 ('Travel Dummy', 'David Ho', 'Travel', '2009-12-05', 'Dummy Press', 150, 2.8, TRUE);
 
 -- ************************************************************
