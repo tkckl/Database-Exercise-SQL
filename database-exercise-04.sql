@@ -64,6 +64,7 @@ INSERT INTO STUDENT VALUES (1004, 'Helen Wong',   '4B', 17);
 INSERT INTO STUDENT VALUES (1005, 'Andy Lau',     '4C', 16);
 INSERT INTO STUDENT VALUES (1006, 'Sally Chow',   '4C', 15);
 INSERT INTO STUDENT VALUES (1007, 'Grace Yip',    '4A', 16);
+INSERT INTO STUDENT VALUES (1008, 'Ray Tong',     '4E', 16);
 
 -- ************************************************************
 -- 插入 ENROLL 資料 (選課紀錄 + 成績)
