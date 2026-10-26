@@ -69,9 +69,11 @@ INSERT INTO ACTOR VALUES (2704, 'Mark Ruffalo',     '1967-11-22', 'M', NULL);
 INSERT INTO ACTOR VALUES (2705, 'Jeremy Renner',    '1971-01-07', 'M', NULL);
 INSERT INTO ACTOR VALUES (2706, 'Brie Larson',      '1989-10-01', 'F', 'Best Actress');
 INSERT INTO ACTOR VALUES (2707, 'Josh Brolin',      '1968-02-12', 'M', NULL);
+
+
 -- ************************************************************
 -- 插入 CREDIT 資料
--- ********************************************************----
+-- ************************************************************
 
 -- La La Land
 INSERT INTO CREDIT VALUES (1600, 2600, 'Mia',    10000000);
