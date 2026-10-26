@@ -3,9 +3,9 @@
 -- 資訊及通訊科技 - 數據庫 練習6 (outer join)
 -- ************************************************************
 
-DROP TABLE IF EXISTS CAST;
 DROP TABLE IF EXISTS MOVIE;
 DROP TABLE IF EXISTS ACTOR;
+DROP TABLE IF EXISTS CREDIT;
 
 -- ************************************************************
 -- 建立表格
@@ -29,7 +29,7 @@ CREATE TABLE ACTOR (
    award   CHAR(100)                -- 獎項
 );
 
-CREATE TABLE CAST (
+CREATE TABLE CREDIT (
    mid       INT,                   -- 電影識別碼
    aid       INT,                   -- 演員識別碼
    role      CHAR(50),              -- 角色
@@ -70,39 +70,39 @@ INSERT INTO ACTOR VALUES (2705, 'Jeremy Renner',    '1971-01-07', 'M', NULL);
 INSERT INTO ACTOR VALUES (2706, 'Brie Larson',      '1989-10-01', 'F', 'Best Actress');
 INSERT INTO ACTOR VALUES (2707, 'Josh Brolin',      '1968-02-12', 'M', NULL);
 -- ************************************************************
--- 插入 CAST 資料
+-- 插入 CREDIT 資料
 -- ********************************************************----
 
 -- La La Land
-INSERT INTO CAST VALUES (1600, 2600, 'Mia',    10000000);
-INSERT INTO CAST VALUES (1600, 2601, 'Sebastian', 12000000);
+INSERT INTO CREDIT VALUES (1600, 2600, 'Mia',    10000000);
+INSERT INTO CREDIT VALUES (1600, 2601, 'Sebastian', 12000000);
 
 -- Future Wars
-INSERT INTO CAST VALUES (1601, 2602, 'Commander', 8000000);
-INSERT INTO CAST VALUES (1601, 2604, 'Soldier',   5000000);
+INSERT INTO CREDIT VALUES (1601, 2602, 'Commander', 8000000);
+INSERT INTO CREDIT VALUES (1601, 2604, 'Soldier',   5000000);
 
 -- Love Story
-INSERT INTO CAST VALUES (1602, 2601, 'Boyfriend', 4000000);
-INSERT INTO CAST VALUES (1602, 2603, 'Girlfriend',3500000);
+INSERT INTO CREDIT VALUES (1602, 2601, 'Boyfriend', 4000000);
+INSERT INTO CREDIT VALUES (1602, 2603, 'Girlfriend',3500000);
 
 -- Silent Hill
-INSERT INTO CAST VALUES (1603, 2602, 'Detective', 6000000);
-INSERT INTO CAST VALUES (1603, 2603, 'Victim',    3000000);
+INSERT INTO CREDIT VALUES (1603, 2602, 'Detective', 6000000);
+INSERT INTO CREDIT VALUES (1603, 2603, 'Victim',    3000000);
 
 -- Comedy Night
-INSERT INTO CAST VALUES (1604, 2604, 'Funny Guy', 2000000);
-INSERT INTO CAST VALUES (1604, 2601, 'Joker',     2500000);
-INSERT INTO CAST VALUES (1604, 2600, 'Comedian',  3000000);
+INSERT INTO CREDIT VALUES (1604, 2604, 'Funny Guy', 2000000);
+INSERT INTO CREDIT VALUES (1604, 2601, 'Joker',     2500000);
+INSERT INTO CREDIT VALUES (1604, 2600, 'Comedian',  3000000);
 
 -- Avengers: Endgame
-INSERT INTO CAST VALUES (1606, 2700, 'Tony Stark / Iron Man', 75000000);
-INSERT INTO CAST VALUES (1606, 2701, 'Steve Rogers / Captain America', 15000000);
-INSERT INTO CAST VALUES (1606, 2702, 'Thor',       20000000);
-INSERT INTO CAST VALUES (1606, 2703, 'Natasha Romanoff / Black Widow', 15000000);
-INSERT INTO CAST VALUES (1606, 2704, 'Bruce Banner / Hulk',   15000000);
-INSERT INTO CAST VALUES (1606, 2705, 'Clint Barton / Hawkeye',12000000);
-INSERT INTO CAST VALUES (1606, 2706, 'Carol Danvers / Captain Marvel',10000000);
-INSERT INTO CAST VALUES (1606, 2707, 'Thanos',    8000000);
+INSERT INTO CREDIT VALUES (1606, 2700, 'Tony Stark / Iron Man', 75000000);
+INSERT INTO CREDIT VALUES (1606, 2701, 'Steve Rogers / Captain America', 15000000);
+INSERT INTO CREDIT VALUES (1606, 2702, 'Thor',       20000000);
+INSERT INTO CREDIT VALUES (1606, 2703, 'Natasha Romanoff / Black Widow', 15000000);
+INSERT INTO CREDIT VALUES (1606, 2704, 'Bruce Banner / Hulk',   15000000);
+INSERT INTO CREDIT VALUES (1606, 2705, 'Clint Barton / Hawkeye',12000000);
+INSERT INTO CREDIT VALUES (1606, 2706, 'Carol Danvers / Captain Marvel',10000000);
+INSERT INTO CREDIT VALUES (1606, 2707, 'Thanos',    8000000);
 
 -- The Earth → 沒有任何演員參與
 
